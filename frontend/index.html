@@ -7,7 +7,7 @@
     <script>
         async function analyzeSentiment() {
             const text = document.getElementById('textInput').value;
-            const response = await fetch(`https://austin-trial-penn-bare.trycloudflare.com/predict?text=${encodeURIComponent(text)}`);
+            const response = await fetch(`https://lt-combo-presence-variation.trycloudflare.com/predict?text=${encodeURIComponent(text)}`);
             const sentiment = await response.text();
             document.getElementById('result').innerText = `Sentiment: ${sentiment}`;
         }
